@@ -4,13 +4,13 @@ int main(void){
 	
 	double R2_base = 10e3;
 	double R1_min = 0.0;
-	double R1_max = 100.0e3;
+	double R1_max = 0.0;
 	double V_OUT_min = 0.0;
-	double V_OUT_max = 9.0;
+	double V_OUT_max = 5.0;
 	double V_OUT_stellung = 0.0;
 	double stellung = 0.96;
 	
-	int mittelabgriff = 1;
+	int mittelabgriff = 0;
 	
 	if(mittelabgriff){
 		V_OUT_min = ((R1_min/(R2_base + R1_max - R1_min)) + 1.0) * 0.8;
